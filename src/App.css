@@ -1,0 +1,177 @@
+/*GENERAL CSS*/
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Apply Font to Entire Page */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*THE TODOLIST CSS*/
+.app-container {
+    max-width: 600px;
+    margin: 100px auto 60px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.task-item button {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters button:disabled {
+    background-color: #2C3E50;
+    color: white;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+
+.task-date {
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: #2C3E50;
+    border: 2px solid #2C3E50; /* Adds a border to make them visible */
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Hover effect: Dark background with white text */
+button:hover {
+    background-color: #2C3E50;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*THE POMODORO TIMER CSS*/
+.pomodoro-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mode-text {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.work {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.rest {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.timer-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.pomodoro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pomodoro-buttons button {
+    background-color: white;
+    color: #2C3E50;
+    border: 2px solid #2C3E50;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pomodoro-buttons button:hover {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.pomodoro-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
